@@ -115,15 +115,16 @@ public class Main {
     public static void task8() {
         System.out.println("Задача 8");
 
-        int cometFlight = 0;
-        int start = 200;
-        int finish = 100;
+        int todayYear = 2017;
+        int start;
+        int finish;
+        start = todayYear - 200;
+        finish = todayYear + 100;
 
-        while (cometFlight <= 79 && start > finish) {
-            cometFlight++;
-
-            if (cometFlight % 79 == 0) {
-                System.out.println("Сегодня пятница, " + cometFlight + "-е число. Необходимо подготовить отчет");
+        while (start < finish) {
+            start++;
+            if (start % 79 == 0) {
+                System.out.println(start);
             }
         }
     }
