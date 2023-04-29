@@ -123,9 +123,9 @@ public class Main {
         start = todayYear - 200;
         finish = todayYear + 100;
 
-        while (year < finish) {
+        while (year <= finish) {
             year++;
-            if (year % 79 == 0 && year > start ) {
+            if (year % 79 == 0 && year >= start ) {
                 System.out.println(year);
             }
         }
