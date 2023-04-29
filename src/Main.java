@@ -115,16 +115,18 @@ public class Main {
     public static void task8() {
         System.out.println("Задача 8");
 
-        int todayYear = 2017;
+        int todayYear = 2023;
         int start;
         int finish;
+        int year = 0;
+
         start = todayYear - 200;
         finish = todayYear + 100;
 
-        while (start < finish) {
-            start++;
-            if (start % 79 == 0) {
-                System.out.println(start);
+        while (year < finish) {
+            year++;
+            if (year % 79 == 0 && year > start ) {
+                System.out.println(year);
             }
         }
     }
